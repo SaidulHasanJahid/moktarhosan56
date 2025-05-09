@@ -1,0 +1,138 @@
+/* Responsive for tablets and smaller laptops */
+@media (max-width: 992px) {
+  .allcontent {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .contentfour {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .fiftpart {
+    flex-direction: column;
+  }
+
+  .fourpart {
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+  }
+
+  .swiper {
+    margin: 20px auto !important;
+    width: 90%;
+  }
+
+  .boxslider {
+    width: 100% !important;
+    height: auto;
+  }
+
+  .cardswiper {
+    width: 100%;
+  }
+
+  .featured-card {
+    position: relative;
+    width: 100% !important;
+    height: auto;
+  }
+
+  .news-grid {
+    flex-direction: column;
+  }
+
+  .featured-post, .side-posts {
+    flex: 1 1 100%;
+  }
+
+  .side-posts {
+    grid-template-columns: 1fr;
+  }
+
+  .post-item {
+    flex-direction: column;
+  }
+
+  .post-thumb {
+    max-width: 100%;
+  }
+
+  .tabs {
+    flex-direction: column;
+  }
+
+  .tab-btn {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .logo-center {
+    padding: 15px 0;
+  }
+}
+
+/* Responsive for mobile devices */
+@media (max-width: 576px) {
+  .carousel-inner {
+    height: 250px !important;
+  }
+
+  .image {
+    height: 250px;
+  }
+
+  .section-title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .post-title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .post-meta {
+    font-size: 12px;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .social-btns a {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .video-title {
+    font-size: 14px;
+  }
+
+  .popular-left h3 {
+    font-size: 16px;
+  }
+
+  .category-tabs {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .category-tabs li a {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .footer {
+    padding: 30px 0 20px;
+  }
+
+  .footer .newsletter input {
+    width: 100%;
+  }
+
+  .promo-banner img {
+    max-width: 100%;
+  }
+}
