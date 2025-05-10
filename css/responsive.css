@@ -1,4 +1,12 @@
 /* Responsive for tablets and smaller laptops */
+
+
+    @media (max-width: 991px) {
+      .navbar-collapse {
+        background-color: #fff;
+        padding: 10px;
+      }
+    }
 @media (max-width: 992px) {
   .allcontent {
     width: 100%;

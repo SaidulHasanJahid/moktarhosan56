@@ -1,879 +1,984 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Navbar</title>
 
     <!-- Css link -->
-    <link rel="stylesheet" href="./css/new.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/new.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
 
     <!-- link boostrap and font awsome  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
 
-
-</head>
-
-<body>
-
+  <body>
     <section class="allcontent">
-
-        
-        <!-- ---------------------- Navber-1 st ------------------ -->
-        <!-- Top Bar -->
-        <div class="first-part">
-            <div class="container-fluid border-bottom">
-                <div class="row align-items-center top-bar px-3">
-                    <div class="col-6 d-flex align-items-center">
-                        <i class="fa-regular fa-calendar me-2"></i> Fri, May 2025
-                    </div>
-                    <div class="col-6 text-end">
-                        <a href="#" class="text-dark me-2"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-dark me-2"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-dark me-2"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-dark me-2"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="text-dark me-2"><i class="fab fa-pinterest-p"></i></a>
-                        <a href="#" class="text-dark"><i class="fa-regular fa-user me-1"></i> Login</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Logo Center -->
-            <div class="logo-center">
-                <img src="./images/logonews.jpg" alt="Logo" class="img-fluid" style="height: 100px;">
-            </div>
-
-            <!-- Main Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-light main-nav">
-                <div class="container">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse justify-content-between" id="mainNavbar">
-                        <!-- Left: Section Icon -->
-                        <ul class="navbar-nav">
-                            <li class="nav-item d-flex align-items-center">
-                                <i class="fa-solid fa-table-cells-large me-2"></i> All Sections
-                            </li>
-                        </ul>
-
-                        <!-- Center Nav Links -->
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">HOME</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Home Style 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Home Style 2</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="#">GALLERIES</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">CATEGORY LAYOUTS</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Category 1</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">POST LAYOUTS</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Post Style 1</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">PAGES</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Page 1</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                        <!-- Right: Search Icon & Input -->
-                        <div class="d-flex align-items-center">
-                            <button class="btn p-0 border-0" id="searchBtn"><i
-                                    class="fa-solid fa-magnifying-glass"></i></button>
-                            <input type="text" id="searchInput" class="form-control ms-2 search-box"
-                                placeholder="Search..." />
-                        </div>
-                    </div>
-                </div>
-            </nav>
+      <!-- ---------------------- Navber-1 st ------------------ -->
+      <!-- Top Bar -->
+      <div class="first-part">
+        <!-- Topbar -->
+        <div
+          class="topbar py-2 px-3 d-flex justify-content-between align-items-center"
+        >
+          <div><i class="fa fa-calendar-alt"></i> Sat, May 2025</div>
+          <div class="d-flex align-items-center social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <span class="ms-3"><i class="fa fa-user"></i> Login</span>
+          </div>
         </div>
 
+        <!-- Center Logo -->
+        <div class="header-logo">
+          <img src="./images/logonews.jpg" alt="CricZone Logo" />
+        </div>
 
-        <!-- ---------------------- Section-2 slider ------------------ -->
+        <!-- Main Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light main-nav">
+          <div class="container">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <div
+              class="collapse navbar-collapse justify-content-between"
+              id="mainNavbar"
+            >
+              <!-- Left: Section Icon -->
+              <!-- All Sections Button -->
+              <button
+                class="btn btn-link text-decoration-none d-flex align-items-center"
+                style="color: black"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#leftDrawer"
+              >
+                <i class="fas fa-th-large me-2"></i> All Sections
+              </button>
 
-        <section class="secoundslaider">
-            <div class="first-slider">
-                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <img src="./images/ss1.jpg" class="d-block image " alt="./images/ss2.jpg">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="./images/ss3.jpg" class="d-block image " alt="./images/ss2.jpg">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="./images/sa3.jpg" class="d-block image " alt="./images/ss2.jpg">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+              <!-- Center Nav Links -->
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    >HOME</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Home Style 1</a></li>
+                    <li><a class="dropdown-item" href="#">Home Style 2</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">GALLERIES</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    >CATEGORY LAYOUTS</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Category 1</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    >POST LAYOUTS</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Post Style 1</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACT</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    >PAGES</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Page 1</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <!-- Right: Search Icon & Input -->
+              <div class="d-flex align-items-center">
+                <button class="btn p-0 border-0" id="searchBtn">
+                  <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-</div>
+                <input
+                  type="text"
+                  id="searchInput"
+                  class="form-control ms-2 search-box"
+                  placeholder="Search..."
+                />
+              </div>
             </div>
+          </div>
+        </nav>
+      </div>
 
-            <!-- Slaider _First -->
+      <!-- ---------------------- Section-2 slider ------------------ -->
 
-            <div class="boxslider">
-                <h3>Editor's picked</h3>
-                <br>
-                <p>The featured articles are selected by experienced editors. It is also based on the reader's rating. These posts have a lot of interest.</p>
+      <section class="secoundslaider">
+        <div class="first-slider">
+          <div
+            id="carouselExampleFade"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./images/slaider1.png"
+                  class="d-block image"
+                  alt="./images/ss2.jpg"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/slaider2.jpg"
+                  class="d-block image"
+                  alt="./images/ss2.jpg"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/slaider3.jpg"
+                  class="d-block image"
+                  alt="./images/ss2.jpg"
+                />
+              </div>
             </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
 
-            <div #swiperRef="" class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="cardswiper">
-                            <div class="textcard">
-                                <p>ডিপিএলে ফি"ক্সিং ইস্যু এবং সেটিকে পুনরায় সবার সামনে.........</p>
-                            </div>
-                            <img src="./images/sa4.jpg" alt="">
-                            <span >
-                                <p style="margin-top: 11px;">28 Dec, 2024
-                                    18 mins read
-                                    311 views</p>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="cardswiper">
-                            <div class="textcard">
-                                <p>ডিপিএলে ফি"ক্সিং ইস্যু এবং সেটিকে পুনরায় সবার সামনে.........</p>
-                            </div>
-                            <img src="./images/sa1.jpg" alt="">
-                            <span >
-                                <p style="margin-top: 11px;">28 Dec, 2024
-                                    18 mins read
-                                    311 views</p>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="cardswiper">
-                            <div class="textcard">
-                                <p>ডিপিএলে ফি"ক্সিং ইস্যু এবং সেটিকে পুনরায় সবার সামনে.........</p>
-                            </div>
-                            <img src="./images/sa2.jpg" alt="">
-                            <span >
-                                <p style="margin-top: 11px;">28 Dec, 2024
-                                    18 mins read
-                                    311 views</p>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="cardswiper">
-                            <div class="textcard">
-                                <p>ডিপিএলে ফি"ক্সিং ইস্যু এবং সেটিকে পুনরায় সবার সামনে.........</p>
-                            </div>
-                            <img src="./images/sa3.jpg" alt="">
-                            <span >
-                                <p style="margin-top: 11px;">28 Dec, 2024
-                                    18 mins read
-                                    311 views</p>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="cardswiper">
-                            <div class="textcard">
-                                <p>ডিপিএলে ফি"ক্সিং ইস্যু এবং সেটিকে পুনরায় সবার সামনে.........</p>
-                            </div>
-                            <img src="./images/sa4.jpg" alt="">
-                            <span >
-                                <p style="margin-top: 11px;">28 Dec, 2024
-                                    18 mins read
-                                    311 views</p>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="cardswiper">
-                            <div class="textcard">
-                                <p>ডিপিএলে ফি"ক্সিং ইস্যু এবং সেটিকে পুনরায় সবার সামনে.........</p>
-                            </div>
-                            <img src="./images/sa5.jpg" alt="">
-                            <span >
-                                <p style="margin-top: 11px;">28 Dec, 2024
-                                    18 mins read
-                                    311 views</p>
-                            </span>
-                        </div>
-                    </div>
+        <!-- Slaider _First -->
+
+        <div class="boxslider">
+          <h3>Editor's picked</h3>
+          <br />
+          <p>
+            The featured articles are selected by experienced editors. It is
+            also based on the reader's rating. These posts have a lot of
+            interest.
+          </p>
+        </div>
+
+        <div #swiperRef="" class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="cardswiper">
+                <div class="textcard">
+                  <p>
+                    ডিপিএলে ফি"ক্সিং ইস্যু এবং সেটিকে পুনরায় সবার সামনে.........
+                  </p>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <img src="./images/sa4.jpg" alt="" />
+                <span>
+                  <p style="margin-top: 11px">
+                    28 Dec, 2024 18 mins read 311 views
+                  </p>
+                </span>
+              </div>
             </div>
+            <div class="swiper-slide">
+              <div class="cardswiper">
+                <div class="textcard">
+                  <p>
+                    ডিপিএলে ফি"ক্সিং ইস্যু এবং সেটিকে পুনরায় সবার সামনে.........
+                  </p>
+                </div>
+                <img src="./images/sa1.jpg" alt="" />
+                <span>
+                  <p style="margin-top: 11px">
+                    28 Dec, 2024 18 mins read 311 views
+                  </p>
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cardswiper">
+                <div class="textcard">
+                  <p>
+                    ডিপিএলে ফি"ক্সিং ইস্যু এবং সেটিকে পুনরায় সবার সামনে.........
+                  </p>
+                </div>
+                <img src="./images/sa2.jpg" alt="" />
+                <span>
+                  <p style="margin-top: 11px">
+                    28 Dec, 2024 18 mins read 311 views
+                  </p>
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cardswiper">
+                <div class="textcard">
+                  <p>
+                    ডিপিএলে ফি"ক্সিং ইস্যু এবং সেটিকে পুনরায় সবার সামনে.........
+                  </p>
+                </div>
+                <img src="./images/sa3.jpg" alt="" />
+                <span>
+                  <p style="margin-top: 11px">
+                    28 Dec, 2024 18 mins read 311 views
+                  </p>
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cardswiper">
+                <div class="textcard">
+                  <p>
+                    ডিপিএলে ফি"ক্সিং ইস্যু এবং সেটিকে পুনরায় সবার সামনে.........
+                  </p>
+                </div>
+                <img src="./images/sa4.jpg" alt="" />
+                <span>
+                  <p style="margin-top: 11px">
+                    28 Dec, 2024 18 mins read 311 views
+                  </p>
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cardswiper">
+                <div class="textcard">
+                  <p>
+                    ডিপিএলে ফি"ক্সিং ইস্যু এবং সেটিকে পুনরায় সবার সামনে.........
+                  </p>
+                </div>
+                <img src="./images/sa5.jpg" alt="" />
+                <span>
+                  <p style="margin-top: 11px">
+                    28 Dec, 2024 18 mins read 311 views
+                  </p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
 
-
-            <!-- Secound slider -->
-
-
-
-        </section>
-
+        <!-- Secound slider -->
+      </section>
 
       <!-- thirdpart start    -->
 
+      <div class="thardpart">
+        <div class="recent-posts-section">
+          <h2 class="section-title"><span>RECENT POSTS</span></h2>
+          <div class="post-list">
+            <div class="post-item">
+              <div class="post-thumb">
+                <img src="./images/sa5.jpg" alt="Post 1" />
+              </div>
+              <div class="post-info">
+                <span class="post-category blue">DESIGN</span>
+                <h3 class="post-title">এ বছরের শাস্তি গেল পরের বছর!</h3>
+                <div class="post-meta">
+                  <span>28 Dec, 2024</span>
+                  <span>15 mins read</span>
+                  <span>1,519 views</span>
+                </div>
+              </div>
+            </div>
 
-         <div class="thardpart">
- <div class="recent-posts-section">
-    <h2 class="section-title"><span>RECENT POSTS</span></h2>
-    <div class="post-list">
+            <div class="post-item">
+              <div class="post-thumb">
+                <img src="./images/sa1.jpg" alt="Post 2" />
+              </div>
+              <div class="post-info">
+                <span class="post-category blue">DESIGN</span>
+                <h3 class="post-title">
+                  ডিপিএল ফিংশ্রিং ইস্যু এবং সচিকে পুনরায় সমনে আসান নিয়ে ক্লাস্ভ
+                  বেড়াচ্ছেন তামিম ইকবালা।
+                </h3>
+                <div class="post-meta">
+                  <span>28 Dec, 2024</span>
+                  <span>18 mins read</span>
+                  <span>311 views</span>
+                </div>
+              </div>
+            </div>
 
-      <div class="post-item">
-        <div class="post-thumb">
-          <img src="./images/sa5.jpg" alt="Post 1">
+            <div class="post-item">
+              <div class="post-thumb">
+                <img src="./images/ss3.jpg" alt="Post 3" />
+              </div>
+              <div class="post-info">
+                <span class="post-category pink">DESIGN</span>
+                <h3 class="post-title">
+                  সাকিব নেই ক্রিকেটারদের অভিভাবক প্রথম তামিম! খান সাহেবের
+                  পাশ*শাস্তি হৃদয়ের শাস্তি 3 বছর পেছেছিল!
+                </h3>
+                <div class="post-meta">
+                  <span>28 Dec, 2024</span>
+                  <span>19 mins read</span>
+                  <span>2,148 views</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="post-info">
-          <span class="post-category blue">DESIGN</span>
-          <h3 class="post-title">এ বছরের শাস্তি গেল পরের বছর!
-          </h3>
-          <div class="post-meta">
-            <span>28 Dec, 2024</span>
-            <span>15 mins read</span>
-            <span>1,519 views</span>
+
+        <div class="sidebar-container">
+          <div class="follow-us">
+            <h3>Follow Us</h3>
+            <div class="social-btns">
+              <a href="#" class="fb">Facebook 65 K</a>
+              <a href="#" class="tw">Twitter 12 K</a>
+              <a href="#" class="ig">Instagram 678</a>
+              <a href="#" class="pt">Pinterest</a>
+            </div>
+          </div>
+
+          <div class="tab-section">
+            <div class="tabs">
+              <button class="tab-btn active" data-tab="popular">POPULAR</button>
+              <button class="tab-btn" data-tab="feature">FEATURE</button>
+              <button class="tab-btn" data-tab="comments">COMMENTS</button>
+            </div>
+
+            <div class="tab-content active" id="popular">
+              <div class="post">
+                <img src="./images/sa4.jpg" alt="Post 1" />
+                <div class="info">
+                  <span class="tag red">DESIGN</span>
+                  <p>ছয় বছর পরে নতুন খেলোয়াড়</p>
+                  <small>28 Dec, 2024 · 2,496 views</small>
+                </div>
+              </div>
+              <div class="post">
+                <img src="./images/sa3.jpg" alt="Post 2" />
+                <div class="info">
+                  <span class="tag yellow">DESIGN</span>
+                  <p>গাজী গ্রুপ ক্রিকেট টিম</p>
+                  <small>28 Dec, 2024 · 2,350 views</small>
+                </div>
+              </div>
+              <div class="post">
+                <img src="./images/sa5.jpg" alt="Post 3" />
+                <div class="info">
+                  <span class="tag red">DESIGN</span>
+                  <p>অগ্রণী ব্যাংকের ১০০ রান</p>
+                  <small>28 Dec, 2024 · 2,336 views</small>
+                </div>
+              </div>
+              <div class="post">
+                <img src="./images/ss2.jpg" alt="Post 4" />
+                <div class="info">
+                  <span class="tag blue">DESIGN</span>
+                  <p>সাকিব নেই দলে</p>
+                  <small>28 Dec, 2024 · 2,148 views</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content" id="feature">
+              <p>Feature content goes here...</p>
+            </div>
+
+            <div class="tab-content" id="comments">
+              <p>Comments content goes here...</p>
+            </div>
+          </div>
+
+          <div class="promo-banner">
+            <img src="./images/ss2.jpg" alt="Banner" />
           </div>
         </div>
       </div>
-
-      <div class="post-item">
-        <div class="post-thumb">
-          <img src="./images/sa1.jpg" alt="Post 2">
-        </div>
-        <div class="post-info">
-          <span class="post-category blue">DESIGN</span>
-          <h3 class="post-title">ডিপিএল ফিংশ্রিং ইস্যু এবং সচিকে পুনরায় সমনে আসান নিয়ে ক্লাস্ভ বেড়াচ্ছেন তামিম ইকবালা।
-          </h3>
-          <div class="post-meta">
-            <span>28 Dec, 2024</span>
-            <span>18 mins read</span>
-            <span>311 views</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="post-item">
-        <div class="post-thumb">
-          <img src="./images/ss3.jpg" alt="Post 3">
-        </div>
-        <div class="post-info">
-          <span class="post-category pink">DESIGN</span>
-          <h3 class="post-title">সাকিব নেই ক্রিকেটারদের অভিভাবক প্রথম তামিম! খান সাহেবের পাশ*শাস্তি হৃদয়ের শাস্তি 3 বছর পেছেছিল!
-          </h3>
-          <div class="post-meta">
-            <span>28 Dec, 2024</span>
-            <span>19 mins read</span>
-            <span>2,148 views</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-<div class="sidebar-container">
-  <div class="follow-us">
-    <h3>Follow Us</h3>
-    <div class="social-btns">
-      <a href="#" class="fb">Facebook 65 K</a>
-      <a href="#" class="tw">Twitter 12 K</a>
-      <a href="#" class="ig">Instagram 678</a>
-      <a href="#" class="pt">Pinterest</a>
-    </div>
-  </div>
-
-  <div class="tab-section">
-    <div class="tabs">
-      <button class="tab-btn active" data-tab="popular">POPULAR</button>
-      <button class="tab-btn" data-tab="feature">FEATURE</button>
-      <button class="tab-btn" data-tab="comments">COMMENTS</button>
-    </div>
-
-    <div class="tab-content active" id="popular">
-      <div class="post">
-        <img src="./images/sa4.jpg" alt="Post 1">
-        <div class="info">
-          <span class="tag red">DESIGN</span>
-          <p>ছয় বছর পরে নতুন খেলোয়াড়</p>
-          <small>28 Dec, 2024 · 2,496 views</small>
-        </div>
-      </div>
-      <div class="post">
-        <img src="./images/sa3.jpg" alt="Post 2">
-        <div class="info">
-          <span class="tag yellow">DESIGN</span>
-          <p>গাজী গ্রুপ ক্রিকেট টিম</p>
-          <small>28 Dec, 2024 · 2,350 views</small>
-        </div>
-      </div>
-      <div class="post">
-        <img src="./images/sa5.jpg" alt="Post 3">
-        <div class="info">
-          <span class="tag red">DESIGN</span>
-          <p>অগ্রণী ব্যাংকের ১০০ রান</p>
-          <small>28 Dec, 2024 · 2,336 views</small>
-        </div>
-      </div>
-      <div class="post">
-        <img src="./images/ss2.jpg" alt="Post 4">
-        <div class="info">
-          <span class="tag blue">DESIGN</span>
-          <p>সাকিব নেই দলে</p>
-          <small>28 Dec, 2024 · 2,148 views</small>
-        </div>
-      </div>
-    </div>
-
-    <div class="tab-content" id="feature">
-      <p>Feature content goes here...</p>
-    </div>
-
-    <div class="tab-content" id="comments">
-      <p>Comments content goes here...</p>
-    </div>
-  </div>
-
-  <div class="promo-banner">
-    <img src="./images/ss2.jpg" alt="Banner">
-  </div>
-</div>
-
-
-
-        </div>
-
 
       <!-- Four start    -->
-        <section class="fourpart">
+      <section class="fourpart">
         <div class="contentfour">
-                <div class="container">
-                    <h2 class="section-title"><span>In motion</span></h2>
+          <div class="container">
+            <h2 class="section-title"><span>In motion</span></h2>
 
             <div class="row">
-            <div class="col-md-6">
+              <div class="col-md-6">
                 <div class="featured-card">
-                <img src="./images/ss1.jpg" alt="Featured" />
-                <div class="featured-overlay">
+                  <img src="./images/ss1.jpg" alt="Featured" />
+                  <div class="featured-overlay">
                     <div class="featured-title">
-                    ডিপিএলে ফিটিং ইস্যু এবং সেটিকে পুনরায় সবার সামনে
-                    আসান নিয়ে ফেসবুকে ঝড় তুলেছেন তামিম ইকবাল।
+                      ডিপিএলে ফিটিং ইস্যু এবং সেটিকে পুনরায় সবার সামনে আসান
+                      নিয়ে ফেসবুকে ঝড় তুলেছেন তামিম ইকবাল।
                     </div>
                     <div class="featured-meta">Dec 28 • 731 views</div>
+                  </div>
                 </div>
-                </div>
+              </div>
             </div>
-            </div>
-        </div>
-            <div class="container">
+          </div>
+          <div class="container">
             <div class="row g-4 mt-4">
-            <!-- Card 1 -->
-            <div class="col-md-4 col-sm-6">
+              <!-- Card 1 -->
+              <div class="col-md-4 col-sm-6">
                 <div class="video-card">
-                <img src="./images/ss1.jpg" alt="Video 1">
-                <div class="p-3">
-                    <div class="video-title">গাজী গ্রুপ ক্রিকেটার্সের বিপক্ষে গুরুত্বপূর্ণ ম্যাচ</div>
+                  <img src="./images/ss1.jpg" alt="Video 1" />
+                  <div class="p-3">
+                    <div class="video-title">
+                      গাজী গ্রুপ ক্রিকেটার্সের বিপক্ষে গুরুত্বপূর্ণ ম্যাচ
+                    </div>
                     <div class="video-meta">Dec 28 • 2,350 views</div>
+                  </div>
                 </div>
-                </div>
-            </div>
+              </div>
 
-            <!-- Card 2 -->
-            <div class="col-md-4 col-sm-6">
+              <!-- Card 2 -->
+              <div class="col-md-4 col-sm-6">
                 <div class="video-card">
-                <img src="./images/sa1.jpg" alt="Video 2">
-                <div class="p-3">
-                    <div class="video-title">পিএসএল খেলতে ঢাকা ছাড়লেন নাইম</div>
+                  <img src="./images/sa1.jpg" alt="Video 2" />
+                  <div class="p-3">
+                    <div class="video-title">
+                      পিএসএল খেলতে ঢাকা ছাড়লেন নাইম
+                    </div>
                     <div class="video-meta">Dec 28 • 343 views</div>
+                  </div>
                 </div>
-                </div>
-            </div>
+              </div>
 
-            <!-- Card 3 -->
-            <div class="col-md-4 col-sm-6">
+              <!-- Card 3 -->
+              <div class="col-md-4 col-sm-6">
                 <div class="video-card">
-                <img src="./images/sa2.jpg" alt="Video 3">
-                <div class="p-3">
+                  <img src="./images/sa2.jpg" alt="Video 3" />
+                  <div class="p-3">
                     <div class="video-title">বড় লক্ষ্য এড়াতে চান রুপগঞ্জ</div>
                     <div class="video-meta">Dec 28 • 200 views</div>
+                  </div>
                 </div>
-                </div>
-            </div>
+              </div>
 
-            <!-- Card 4 -->
-            <div class="col-md-4 col-sm-6">
+              <!-- Card 4 -->
+              <div class="col-md-4 col-sm-6">
                 <div class="video-card">
-                <img src="./images/sa4.jpg" alt="Video 4">
-                <div class="p-3">
-                    <div class="video-title">তাহিদের ব্যাটে উড়ে গেল ৫ উইকেট</div>
+                  <img src="./images/sa4.jpg" alt="Video 4" />
+                  <div class="p-3">
+                    <div class="video-title">
+                      তাহিদের ব্যাটে উড়ে গেল ৫ উইকেট
+                    </div>
                     <div class="video-meta">Dec 28 • 933 views</div>
+                  </div>
                 </div>
-                </div>
-            </div>
+              </div>
 
-            <!-- Card 5 -->
-            <div class="col-md-4 col-sm-6">
+              <!-- Card 5 -->
+              <div class="col-md-4 col-sm-6">
                 <div class="video-card">
-                <img src="./images/sa3.jpg" alt="Video 5">
-                <div class="p-3">
+                  <img src="./images/sa3.jpg" alt="Video 5" />
+                  <div class="p-3">
                     <div class="video-title">টিয়ারির কাছে হার মানল পুরান</div>
                     <div class="video-meta">Dec 28 • 735 views</div>
+                  </div>
                 </div>
-                </div>
-            </div>
+              </div>
 
-            <!-- Card 6 -->
-            <div class="col-md-4 col-sm-6">
+              <!-- Card 6 -->
+              <div class="col-md-4 col-sm-6">
                 <div class="video-card">
-                <img src="./images/sa4.jpg" alt="Video 6">
-                <div class="p-3">
+                  <img src="./images/sa4.jpg" alt="Video 6" />
+                  <div class="p-3">
                     <div class="video-title">সিলেটের টেস্ট ফলাফল বিশ্লেষণ</div>
                     <div class="video-meta">Dec 28 • 710 views</div>
+                  </div>
                 </div>
-                </div>
-            </div>
+              </div>
 
-            <!-- Add more cards if needed -->
+              <!-- Add more cards if needed -->
             </div>
+          </div>
         </div>
-        </div>
+      </section>
 
+      <!--  Fifyt part   -->
+      <div class="popular-bar">
+        <div class="popular-left">
+          <h3 style="font-size: 28px"><span>P</span>OPULAR</h3>
+          <ul class="category-tabs m-auto">
+            <li class="active"><a href="#">🎚 DESIGN</a></li>
+            <li><a href="#">LIFESTYLE</a></li>
+            <li><a href="#">TRAVEL TIPS</a></li>
+            <li><a href="#">HEALTHY</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="fiftpart mt-4">
+        <section class="news-grid">
+          <div class="featured-post">
+            <div class="post-image">
+              <img src="./images/sa4.jpg" alt="Featured" />
+              <span class="tag">🎚 DESIGN</span>
+              <div class="overlay-icons">
+                <i class="share-icon">🔗</i>
+              </div>
+            </div>
+            <h2 class="post-title">
+              মোহামেডানের চাপে বিসিবি হৃদয়কে এক ম্যাচ শাস্তি ভোগ করার পর খেলতে
+              দিয়েছে কিনা, এমন প্রশ্নে তামিম বললেন...
+            </h2>
+            <div class="post-meta">
+              <span>28 Dec, 2024</span> • <span>9 mins read</span> •
+              <span>1,805 views</span>
+            </div>
+          </div>
+
+          <div class="side-posts">
+            <div class="small-post">
+              <img src="/images/ss3.jpg" alt="thumb1" />
+              <div class="caption">
+                প্রস্তুতি ম্যাচে শ্রীলঙ্কা অনূর্ধ্ব ১৯ দলকে...
+                <div class="meta">Dec 28 • 1,466 views</div>
+              </div>
+            </div>
+            <div class="small-post">
+              <img src="./images/sa4.jpg" alt="thumb2" />
+              <div class="caption">
+                সিরিজ শুরু’র আগে ট্রফি উন্মোচন...
+                <div class="meta">Dec 28 • 143 views</div>
+              </div>
+            </div>
+            <div class="small-post">
+              <img src="./images/ss1.jpg" alt="thumb3" />
+              <div class="caption">
+                পিএসএল খেলতে পাকিস্তান যাবেন...
+                <div class="meta">Dec 28 • 1,194 views</div>
+              </div>
+            </div>
+            <div class="small-post">
+              <img src="./images/sa2.jpg" alt="thumb4" />
+              <div class="caption">
+                জিম্বাবুয়ের বিপক্ষে সিলেন্ট টেস্টের...
+                <div class="meta">Dec 28 • 710 views</div>
+              </div>
+            </div>
+            <div class="small-post">
+              <img src="./images/sa3.jpg" alt="thumb5" />
+              <div class="caption">
+                নতুন একাদশ ঘোষণা করেছে বিসিবি...
+                <div class="meta">Dec 28 • 890 views</div>
+              </div>
+            </div>
+          </div>
         </section>
-
-
-
-<!--  Fifyt part   -->
-  <div class="popular-bar">
-  <div class="popular-left">
-    <h3 style="font-size: 28px;"><span>P</span>OPULAR</h3>
-    <ul class="category-tabs m-auto">
-      <li class="active"><a href="#">🎚 DESIGN</a></li>
-      <li><a href="#">LIFESTYLE</a></li>
-      <li><a href="#">TRAVEL TIPS</a></li>
-      <li><a href="#">HEALTHY</a></li>
-    </ul>
-  </div>
-
-</div>
-<div class="fiftpart mt-4">
-  
-
-
-<section class="news-grid">
-  <div class="featured-post">
-    <div class="post-image">
-      <img src="./images/sa4.jpg" alt="Featured" />
-      <span class="tag">🎚 DESIGN</span>
-      <div class="overlay-icons">
-        <i class="share-icon">🔗</i>
+        <div class="follow-us">
+          <h3>Follow Us</h3>
+          <div class="social-btns">
+            <a href="#" class="fb">Facebook 65 K</a>
+            <a href="#" class="tw">Twitter 12 K</a>
+            <a href="#" class="ig">Instagram 678</a>
+            <a href="#" class="pt">Pinterest</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <h2 class="post-title">মোহামেডানের চাপে বিসিবি হৃদয়কে এক ম্যাচ শাস্তি ভোগ করার পর খেলতে দিয়েছে কিনা, এমন প্রশ্নে তামিম বললেন...</h2>
-    <div class="post-meta">
-      <span>28 Dec, 2024</span> • 
-      <span>9 mins read</span> • 
-      <span>1,805 views</span>
-    </div>
-  </div>
 
-  <div class="side-posts">
-    <div class="small-post">
-      <img src="/images/ss3.jpg" alt="thumb1" />
-      <div class="caption">
-        প্রস্তুতি ম্যাচে শ্রীলঙ্কা অনূর্ধ্ব ১৯ দলকে...
-        <div class="meta">Dec 28 • 1,466 views</div>
-      </div>
-    </div>
-    <div class="small-post">
-      <img src="./images/sa4.jpg" alt="thumb2" />
-      <div class="caption">
-        সিরিজ শুরু’র আগে ট্রফি উন্মোচন...
-        <div class="meta">Dec 28 • 143 views</div>
-      </div>
-    </div>
-    <div class="small-post">
-      <img src="./images/ss1.jpg" alt="thumb3" />
-      <div class="caption">
-        পিএসএল খেলতে পাকিস্তান যাবেন...
-        <div class="meta">Dec 28 • 1,194 views</div>
-      </div>
-    </div>
-    <div class="small-post">
-      <img src="./images/sa2.jpg" alt="thumb4" />
-      <div class="caption">
-        জিম্বাবুয়ের বিপক্ষে সিলেন্ট টেস্টের...
-        <div class="meta">Dec 28 • 710 views</div>
-      </div>
-    </div>
-    <div class="small-post">
-      <img src="./images/sa3.jpg" alt="thumb5" />
-      <div class="caption">
-        নতুন একাদশ ঘোষণা করেছে বিসিবি...
-        <div class="meta">Dec 28 • 890 views</div>
-      </div>
-    </div>
-  </div>
-</section>
-  <div class="follow-us">
-    <h3>Follow Us</h3>
-    <div class="social-btns">
-      <a href="#" class="fb">Facebook 65 K</a>
-      <a href="#" class="tw">Twitter 12 K</a>
-      <a href="#" class="ig">Instagram 678</a>
-      <a href="#" class="pt">Pinterest</a>
-    </div>
-  </div>
+      <!--  Cooment Slider    -->
 
-
-</div>
-
-<!--  Cooment Slider    -->
-
-
-<div class="slider-container">
+      <div class="slider-container">
         <h2 class="section-title"><span>MOST COMMENT</span></h2>
 
-  <div class="slider-dots" id="sliderDots"></div>
-  <div class="slider-track" id="sliderTrack">
-    <!-- Card 1 -->
-    <div class="slider-card">
-      <img src="./images/ss2.jpg" alt="">
-      <div class="slider-text">
-        <p class="slider-date">ডিসে ২৮</p>
-        <h4 class="slider-title">মোহামেডানের চাপে বিসিবি ঝাড়ুকে এক ম্যাচ “সাসপেন্ড” করা...</h4>
+        <div class="slider-dots" id="sliderDots"></div>
+        <div class="slider-track" id="sliderTrack">
+          <!-- Card 1 -->
+          <div class="slider-card">
+            <img src="./images/ss2.jpg" alt="" />
+            <div class="slider-text">
+              <p class="slider-date">ডিসে ২৮</p>
+              <h4 class="slider-title">
+                মোহামেডানের চাপে বিসিবি ঝাড়ুকে এক ম্যাচ “সাসপেন্ড” করা...
+              </h4>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="slider-card">
+            <img src="./images/sa5.jpg" alt="" />
+            <div class="slider-text">
+              <p class="slider-date">ডিসে ২৮</p>
+              <h4 class="slider-title">
+                প্রস্তুতি ম্যাচে শ্রীলঙ্কা অনূর্ধ্ব ১৯ দলকে উড়িয়ে দিয়েছে টাইগার
+                যুবারা
+              </h4>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="slider-card">
+            <img src="./images/sa1.jpg" alt="" />
+            <div class="slider-text">
+              <p class="slider-date">ডিসে ২৮</p>
+              <h4 class="slider-title">
+                সিরিজ শুরুর আগে ট্রফি উন্মোচনে বাংলাদেশ ও শ্রীলঙ্কা অনূর্ধ্ব ১৯
+              </h4>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="slider-card">
+            <img src="./images/ss2.jpg" alt="" />
+            <div class="slider-text">
+              <p class="slider-date">ডিসে ২৮</p>
+              <h4 class="slider-title">
+                পিএসএল খেলতে পাকিস্তানে যাবেন নাইদ রানা।
+              </h4>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="slider-card">
+            <img src="./images/sa2.jpg" alt="" />
+            <div class="slider-text">
+              <p class="slider-date">ডিসে ২৮</p>
+              <h4 class="slider-title">
+                বাংলাদেশের হয়ে কে হবে ভবিষ্যতের সুপারস্টার?
+              </h4>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="slider-card">
+            <img src="./images/ss3.jpg" alt="" />
+            <div class="slider-text">
+              <p class="slider-date">ডিসে ২৮</p>
+              <h4 class="slider-title">
+                অবিশ্বাস্য এক ক্যাচ ধরলেন ফিল্ডার, সবাই অবাক!
+              </h4>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <!-- Card 2 -->
-    <div class="slider-card">
-      <img src="./images/sa5.jpg" alt="">
-      <div class="slider-text">
-        <p class="slider-date">ডিসে ২৮</p>
-        <h4 class="slider-title">প্রস্তুতি ম্যাচে শ্রীলঙ্কা অনূর্ধ্ব ১৯ দলকে উড়িয়ে দিয়েছে টাইগার যুবারা</h4>
-      </div>
-    </div>
-    <!-- Card 3 -->
-    <div class="slider-card">
-      <img src="./images/sa1.jpg" alt="">
-      <div class="slider-text">
-        <p class="slider-date">ডিসে ২৮</p>
-        <h4 class="slider-title">সিরিজ শুরুর আগে ট্রফি উন্মোচনে বাংলাদেশ ও শ্রীলঙ্কা অনূর্ধ্ব ১৯</h4>
-      </div>
-    </div>
-    <!-- Card 4 -->
-    <div class="slider-card">
-      <img src="./images/ss2.jpg" alt="">
-      <div class="slider-text">
-        <p class="slider-date">ডিসে ২৮</p>
-        <h4 class="slider-title">পিএসএল খেলতে পাকিস্তানে যাবেন নাইদ রানা।</h4>
-      </div>
-    </div>
-    <!-- Card 5 -->
-    <div class="slider-card">
-      <img src="./images/sa2.jpg" alt="">
-      <div class="slider-text">
-        <p class="slider-date">ডিসে ২৮</p>
-        <h4 class="slider-title">বাংলাদেশের হয়ে কে হবে ভবিষ্যতের সুপারস্টার?</h4>
-      </div>
-    </div>
-    <!-- Card 6 -->
-    <div class="slider-card">
-      <img src="./images/ss3.jpg" alt="">
-      <div class="slider-text">
-        <p class="slider-date">ডিসে ২৮</p>
-        <h4 class="slider-title">অবিশ্বাস্য এক ক্যাচ ধরলেন ফিল্ডার, সবাই অবাক!</h4>
-      </div>
-    </div>
-  </div>
-</div>
 
+      <!-- Recommand -->
+      <section>
+        <section class="recent-posts-section">
+          <h2 class="section-title">Recommended</h2>
+          <div class="posts-grid">
+            <div class="post-card">
+              <img src="./images/sa3.jpg" alt="Post 1" class="post-img" />
+              <div class="post-content">
+                <span class="post-category">● DESIGN</span>
+                <h3 class="post-title">এ বছরের শান্তি গেল পরের বছর!</h3>
+                <div class="post-meta">
+                  <span>28 Dec, 2024</span>
+                  <span>15 mins read</span>
+                  <span>1,519 views</span>
+                </div>
+                <a href="#" class="read-more">READ MORE →</a>
+              </div>
+            </div>
+            <div class="post-card">
+              <img src="./images/ss3.jpg" alt="Post 2" class="post-img" />
+              <div class="post-content">
+                <span class="post-category">● DESIGN</span>
+                <h3 class="post-title">
+                  ডিপিএল ফাইনাল ইস্যু এবং সটিকে পুনরায়...
+                </h3>
+                <div class="post-meta">
+                  <span>28 Dec, 2024</span>
+                  <span>18 mins read</span>
+                  <span>3,111 views</span>
+                </div>
+                <a href="#" class="read-more">READ MORE →</a>
+              </div>
+            </div>
+            <div class="post-card">
+              <img src="./images/ss2.jpg" alt="Post 3" class="post-img" />
+              <div class="post-content">
+                <span class="post-category">● DESIGN</span>
+                <h3 class="post-title">
+                  সাকিব নেই ক্রিকেটারদের অভিভাবক এখন তামিম!
+                </h3>
+                <div class="post-meta">
+                  <span>28 Dec, 2024</span>
+                  <span>19 mins read</span>
+                  <span>2,148 views</span>
+                </div>
+                <a href="#" class="read-more">READ MORE →</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
 
-<!-- Recommand -->
-<section>
-     <section class="recent-posts-section">
-<h2 class="section-title">Recommended</h2>
-<div class="posts-grid">
-<div class="post-card">
-<img src="./images/sa3.jpg" alt="Post 1" class="post-img" />
-<div class="post-content">
-  <span class="post-category">● DESIGN</span>
-  <h3 class="post-title">এ বছরের শান্তি গেল পরের বছর!</h3>
-  <div class="post-meta">
-    <span>28 Dec, 2024</span>
-    <span>15 mins read</span>
-    <span>1,519 views</span>
-  </div>
-  <a href="#" class="read-more">READ MORE →</a>
-</div>
-</div>
-<div class="post-card">
-<img src="./images/ss3.jpg" alt="Post 2" class="post-img" />
-<div class="post-content">
-  <span class="post-category">● DESIGN</span>
-  <h3 class="post-title">ডিপিএল ফাইনাল ইস্যু এবং সটিকে পুনরায়...</h3>
-  <div class="post-meta">
-    <span>28 Dec, 2024</span>
-    <span>18 mins read</span>
-    <span>3,111 views</span>
-  </div>
-  <a href="#" class="read-more">READ MORE →</a>
-</div>
-</div>
-<div class="post-card">
-<img src="./images/ss2.jpg" alt="Post 3" class="post-img" />
-<div class="post-content">
-  <span class="post-category">● DESIGN</span>
-  <h3 class="post-title">সাকিব নেই ক্রিকেটারদের অভিভাবক এখন তামিম!</h3>
-  <div class="post-meta">
-    <span>28 Dec, 2024</span>
-    <span>19 mins read</span>
-    <span>2,148 views</span>
-  </div>
-  <a href="#" class="read-more">READ MORE →</a>
-</div>
-</div>
-</div>
-</section>
+      <!--  GAllERY Slider    -->
 
-
-</section>
-
-
-
-<!--  GAllERY Slider    -->
-
-
-<div class="slider-container">
+      <div class="slider-container">
         <h2 class="section-title"><span>OUR GAllERIYES</span></h2>
 
-  <div class="slider-dots" id="sliderDots"></div>
-  <div class="slider-track" id="sliderTrack">
-    <!-- Card 1 -->
-    <div class="slider-card">
-      <img src="./images/ss1.jpg" alt="">
-      <div class="slider-text">
-        <p class="slider-date">ডিসে ২৮</p>
-        <h4 class="slider-title">মোহামেডানের চাপে বিসিবি ঝাড়ুকে এক ম্যাচ “সাসপেন্ড” করা...</h4>
+        <div class="slider-dots" id="sliderDots"></div>
+        <div class="slider-track" id="sliderTrack">
+          <!-- Card 1 -->
+          <div class="slider-card">
+            <img src="./images/ss1.jpg" alt="" />
+            <div class="slider-text">
+              <p class="slider-date">ডিসে ২৮</p>
+              <h4 class="slider-title">
+                মোহামেডানের চাপে বিসিবি ঝাড়ুকে এক ম্যাচ “সাসপেন্ড” করা...
+              </h4>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="slider-card">
+            <img src="./images/sa2.jpg" alt="" />
+            <div class="slider-text">
+              <p class="slider-date">ডিসে ২৮</p>
+              <h4 class="slider-title">
+                প্রস্তুতি ম্যাচে শ্রীলঙ্কা অনূর্ধ্ব ১৯ দলকে উড়িয়ে দিয়েছে টাইগার
+                যুবারা
+              </h4>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="slider-card">
+            <img src="./images/ss1.jpg" alt="" />
+            <div class="slider-text">
+              <p class="slider-date">ডিসে ২৮</p>
+              <h4 class="slider-title">
+                সিরিজ শুরুর আগে ট্রফি উন্মোচনে বাংলাদেশ ও শ্রীলঙ্কা অনূর্ধ্ব ১৯
+              </h4>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="slider-card">
+            <img src="./images/ss2.jpg" alt="" />
+            <div class="slider-text">
+              <p class="slider-date">ডিসে ২৮</p>
+              <h4 class="slider-title">
+                পিএসএল খেলতে পাকিস্তানে যাবেন নাইদ রানা।
+              </h4>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="slider-card">
+            <img src="./images/sa3.jpg" alt="" />
+            <div class="slider-text">
+              <p class="slider-date">ডিসে ২৮</p>
+              <h4 class="slider-title">
+                বাংলাদেশের হয়ে কে হবে ভবিষ্যতের সুপারস্টার?
+              </h4>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="slider-card">
+            <img src="./images/sa5.jpg" alt="" />
+            <div class="slider-text">
+              <p class="slider-date">ডিসে ২৮</p>
+              <h4 class="slider-title">
+                অবিশ্বাস্য এক ক্যাচ ধরলেন ফিল্ডার, সবাই অবাক!
+              </h4>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <!-- Card 2 -->
-    <div class="slider-card">
-      <img src="./images/sa2.jpg" alt="">
-      <div class="slider-text">
-        <p class="slider-date">ডিসে ২৮</p>
-        <h4 class="slider-title">প্রস্তুতি ম্যাচে শ্রীলঙ্কা অনূর্ধ্ব ১৯ দলকে উড়িয়ে দিয়েছে টাইগার যুবারা</h4>
-      </div>
-    </div>
-    <!-- Card 3 -->
-    <div class="slider-card">
-      <img src="./images/ss1.jpg" alt="">
-      <div class="slider-text">
-        <p class="slider-date">ডিসে ২৮</p>
-        <h4 class="slider-title">সিরিজ শুরুর আগে ট্রফি উন্মোচনে বাংলাদেশ ও শ্রীলঙ্কা অনূর্ধ্ব ১৯</h4>
-      </div>
-    </div>
-    <!-- Card 4 -->
-    <div class="slider-card">
-      <img src="./images/ss2.jpg" alt="">
-      <div class="slider-text">
-        <p class="slider-date">ডিসে ২৮</p>
-        <h4 class="slider-title">পিএসএল খেলতে পাকিস্তানে যাবেন নাইদ রানা।</h4>
-      </div>
-    </div>
-    <!-- Card 5 -->
-    <div class="slider-card">
-      <img src="./images/sa3.jpg" alt="">
-      <div class="slider-text">
-        <p class="slider-date">ডিসে ২৮</p>
-        <h4 class="slider-title">বাংলাদেশের হয়ে কে হবে ভবিষ্যতের সুপারস্টার?</h4>
-      </div>
-    </div>
-    <!-- Card 6 -->
-    <div class="slider-card">
-      <img src="./images/sa5.jpg" alt="">
-      <div class="slider-text">
-        <p class="slider-date">ডিসে ২৮</p>
-        <h4 class="slider-title">অবিশ্বাস্য এক ক্যাচ ধরলেন ফিল্ডার, সবাই অবাক!</h4>
-      </div>
-    </div>
-  </div>
-</div>
-
-
     </section>
 
-
-
-
-
-
-
-
-<!------------------------------ Footeer  ---------------------->
-<footer class="footer">
-  <div class="container">
-    <div class="row text-start">
-      <!-- About -->
-      <div class="col-md-3 mb-4">
-        <h5>About me</h5>
-        <p>
-          Introduction about the author of this blog. You should write because you love the shape of stories...
-        </p>
-        <p><strong>Address</strong><br>214 West Arnold St. New York, NY 10002</p>
-        <p><strong>Phone</strong><br>+(123) 345-6789</p>
+    <!-- Offcanvas Left Drawer -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="leftDrawer">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">All Sections</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+        ></button>
       </div>
-
-      <!-- Popular Posts -->
-      <div class="col-md-3 mb-4">
-        <h5>Popular Posts</h5>
-        <div class="d-flex mb-3 popular-post">
-          <img src="./images/ss2.jpg" alt="">
-          <div class="ms-2 text">
-            <p class="mb-0">ছয় নম্বরে নেমে শান্তর পর লড়লেন ক্রেমার।</p>
-            <small>28 Dec, 2024 • 2,496</small>
-          </div>
-        </div>
-        <div class="d-flex mb-3 popular-post">
-          <img src="./images/ss1.jpg" alt="">
-          <div class="ms-2 text">
-            <p class="mb-0">গাজী গ্রুপ ক্রিকেটারদের গুরুত্বপূর্ণ ম্যাচ।</p>
-            <small>28 Dec, 2024 • 2,350</small>
-          </div>
-        </div>
-        <div class="d-flex mb-3 popular-post">
-          <img src="./images/ss3.jpg" alt="">
-          <div class="ms-2 text">
-            <p class="mb-0">অবশেষে ব্যাকের বিপক্ষে ১০৩ রানের বড় জয়।</p>
-            <small>28 Dec, 2024 • 2,336</small>
-          </div>
-        </div>
-      </div>
-
-      <!-- Quick Links & Tags -->
-      <div class="col-md-3 mb-4">
-        <h5>Quick links</h5>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-white text-decoration-none">Homepage</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Galleries</a></li>
+      <div class="offcanvas-body">
+        <ul class="list-group">
+          <li class="list-group-item">News</li>
+          <li class="list-group-item">Sports</li>
+          <li class="list-group-item">Politics</li>
+          <li class="list-group-item">Entertainment</li>
+          <li class="list-group-item">Technology</li>
         </ul>
-        <h5 class="mt-4">Tags</h5>
-        <div>
-          <button class="tag-btn">General</button>
-          <button class="tag-btn">Beauty</button>
-          <button class="tag-btn">Fashion</button>
-          <button class="tag-btn">Lifestyle</button>
-          <button class="tag-btn">Travel</button>
-        </div>
-      </div>
-
-      <!-- Newsletter -->
-      <div class="col-md-3 mb-4">
-        <h5>Newsletter</h5>
-        <p>Subscribe to Our Newsletter</p>
-        <div class="newsletter">
-          <input type="email" class="form-control mb-2" placeholder="Enter your email" />
-        </div>
       </div>
     </div>
-  </div>
-</footer>
 
-<!-- Cookie Banner -->
-<div class="cookie-banner">
-  <div>Your experience
-  
+    <!------------------------------ Footeer  ---------------------->
+    <footer class="footer">
+      <div class="container">
+        <div class="row text-start">
+          <!-- About -->
+          <div class="col-md-3 mb-4">
+            <h5>About me</h5>
+            <p>
+              Introduction about the author of this blog. You should write
+              because you love the shape of stories...
+            </p>
+            <p>
+              <strong>Address</strong><br />214 West Arnold St. New York, NY
+              10002
+            </p>
+            <p><strong>Phone</strong><br />+(123) 345-6789</p>
+          </div>
 
+          <!-- Popular Posts -->
+          <div class="col-md-3 mb-4">
+            <h5>Popular Posts</h5>
+            <div class="d-flex mb-3 popular-post">
+              <img src="./images/ss2.jpg" alt="" />
+              <div class="ms-2 text">
+                <p class="mb-0">ছয় নম্বরে নেমে শান্তর পর লড়লেন ক্রেমার।</p>
+                <small>28 Dec, 2024 • 2,496</small>
+              </div>
+            </div>
+            <div class="d-flex mb-3 popular-post">
+              <img src="./images/ss1.jpg" alt="" />
+              <div class="ms-2 text">
+                <p class="mb-0">গাজী গ্রুপ ক্রিকেটারদের গুরুত্বপূর্ণ ম্যাচ।</p>
+                <small>28 Dec, 2024 • 2,350</small>
+              </div>
+            </div>
+            <div class="d-flex mb-3 popular-post">
+              <img src="./images/ss3.jpg" alt="" />
+              <div class="ms-2 text">
+                <p class="mb-0">অবশেষে ব্যাকের বিপক্ষে ১০৩ রানের বড় জয়।</p>
+                <small>28 Dec, 2024 • 2,336</small>
+              </div>
+            </div>
+          </div>
 
+          <!-- Quick Links & Tags -->
+          <div class="col-md-3 mb-4">
+            <h5>Quick links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none">Homepage</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Contact</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Galleries</a
+                >
+              </li>
+            </ul>
+            <h5 class="mt-4">Tags</h5>
+            <div>
+              <button class="tag-btn">General</button>
+              <button class="tag-btn">Beauty</button>
+              <button class="tag-btn">Fashion</button>
+              <button class="tag-btn">Lifestyle</button>
+              <button class="tag-btn">Travel</button>
+            </div>
+          </div>
 
+          <!-- Newsletter -->
+          <div class="col-md-3 mb-4">
+            <h5>Newsletter</h5>
+            <p>Subscribe to Our Newsletter</p>
+            <div class="newsletter">
+              <input
+                type="email"
+                class="form-control mb-2"
+                placeholder="Enter your email"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-    
+    <!-- Cookie Banner -->
+
     <script>
-    const tabButtons = document.querySelectorAll('.tab-btn');
-    const tabContents = document.querySelectorAll('.tab-content');
-    
-    tabButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        tabButtons.forEach(b => b.classList.remove('active'));
-        tabContents.forEach(c => c.classList.remove('active'));
-    
-        btn.classList.add('active');
-        document.getElementById(btn.dataset.tab).classList.add('active');
-      });
-    });
+      // Create dots
+      const sliderTrack = document.getElementById("sliderTrack");
+      const dotsContainer = document.getElementById("sliderDots");
 
+      const totalSlides = 6;
+      const slidesPerView = 4;
+      let currentIndex = 0;
 
-    const slider = document.getElementById("cardSlider");
+      const totalDots = Math.ceil(totalSlides / slidesPerView);
+      for (let i = 0; i < totalDots; i++) {
+        const dot = document.createElement("button");
+        dot.addEventListener("click", () => goToSlide(i));
+        dotsContainer.appendChild(dot);
+      }
 
+      function goToSlide(index) {
+        currentIndex = index;
+        const percent = (100 / totalSlides) * slidesPerView * index;
+        sliderTrack.style.transform = `translateX(-${percent}%)`;
+        updateDots();
+      }
 
-// Create dots
- const sliderTrack = document.getElementById('sliderTrack');
-  const dotsContainer = document.getElementById('sliderDots');
+      function updateDots() {
+        const dots = dotsContainer.querySelectorAll("button");
+        dots.forEach((dot, idx) => {
+          dot.classList.toggle("active", idx === currentIndex);
+        });
+      }
 
-  const totalSlides = 6;
-  const slidesPerView = 4;
-  let currentIndex = 0;
+      // Autoplay
+      setInterval(() => {
+        currentIndex = (currentIndex + 1) % totalDots;
+        goToSlide(currentIndex);
+      }, 4000);
 
-  const totalDots = Math.ceil(totalSlides / slidesPerView);
-  for (let i = 0; i < totalDots; i++) {
-    const dot = document.createElement("button");
-    dot.addEventListener("click", () => goToSlide(i));
-    dotsContainer.appendChild(dot);
-  }
-
-  function goToSlide(index) {
-    currentIndex = index;
-    const percent = (100 / totalSlides) * slidesPerView * index;
-    sliderTrack.style.transform = `translateX(-${percent}%)`;
-    updateDots();
-  }
-
-  function updateDots() {
-    const dots = dotsContainer.querySelectorAll("button");
-    dots.forEach((dot, idx) => {
-      dot.classList.toggle("active", idx === currentIndex);
-    });
-  }
-
-  // Autoplay
-  setInterval(() => {
-    currentIndex = (currentIndex + 1) % totalDots;
-    goToSlide(currentIndex);
-  }, 4000);
-
-  goToSlide(0); // Init
-
-
+      goToSlide(0); // Init
     </script>
-
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -883,9 +988,7 @@
 
     <!-- Custom Script -->
     <script src="./js/news.js"></script>
-
+    <script src="./js/navber.js"></script>
     <script src="./js/cooment.js"></script>
-
-</body>
-
+  </body>
 </html>
